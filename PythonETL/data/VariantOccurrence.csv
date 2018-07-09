@@ -1,0 +1,13 @@
+variant_occurrence_id,person_id,sequencing_id,variant_type_concept_id,variant_type_source_value,variant_function_concept_id,chrid_1,chrid_2,start_pos,end_pos,gene1_symbol_concept_id,gene1_symbol_source_value,gene2_symbol_concept_id,gene2_symbol_source_value,quality_score,genotype,copy_number,exon_number,hgvs_nomenclature,hgvs_p,read_depth,allele_frequency,allele_frequency_reference
+0,11,0,,,,,,,,172008,KRAS,172008,KRAS,,,,,,,,,
+1,27,9,,,,,,,,172008,KRAS,172008,KRAS,,,,,,,,,
+2,44,18,,,,,,,,172002,BRAF,172002,BRAF,,,,,,,,,
+3,44,18,,,,,,,,172009,MLH1,172009,MLH1,,,,,,,,,
+4,44,18,,,,,,,,172017,PMS2,172017,PMS2,,,,,,,,,
+5,47,20,,,,,,,,172009,MLH1,172009,MLH1,,,,,,,,,
+6,47,21,,,,,,,,172002,BRAF,172002,BRAF,,,,,,,,,
+7,47,20,,,,,,,,172017,PMS2,172017,PMS2,,,,,,,,,
+8,49,22,,,,,,,,172016,PIK3CA,172016,PIK3CA,,,,,,,,,
+9,49,22,,,,,,,,172002,BRAF,172002,BRAF,,,,,,,,,
+10,49,22,,,,,,,,172009,MLH1,172009,MLH1,,,,,,,,,
+11,49,22,,,,,,,,172017,PMS2,172017,PMS2,,,,,,,,,

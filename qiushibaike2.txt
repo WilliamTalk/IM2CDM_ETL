@@ -1,0 +1,439 @@
+8532: Female
+8507: Male
+8551: Unknown (D)
+8657: American Indian or Alaska Native
+8515: Asian
+8516: Black or African American
+8557: Native Hawaiian or Other Pacific Islander
+8527: White
+8552: Unknown (D)
+254: EHR Record immediate cause
+255: EHR Record contributory cause
+256: EHR Record underlying cause
+242: Other government reported or identified death
+261: US Social Security Death Master File record
+38003565: Payer enrollment status "Deceased"
+38003566: Medical claim discharge status "Died"
+38003567: Medical claim diagnostic code indicating death
+38003568: Medical claim DRG code indicating death
+38003569: EHR record patient status "Deceased"
+38003570: Death Certificate immediate cause
+38003617: Death Certificate contributory cause
+38003618: Death Certificate underlying cause
+44818516: EHR discharge status "Expired"
+8537: School
+8562: Pharmacy
+8602: Temporary Lodging
+8650: Birthing Center
+8672: Homeless Shelter
+8677: Outpatient NEC
+8717: Inpatient Hospital
+8761: Rural Health Clinic
+8782: Urgent Care Facility
+8827: Custodial Care Facility
+8850: Ambulance - Air or Water
+8858: Mass Immunization Center
+8870: Emergency Room - Hospital
+8883: Ambulatory Surgical Center
+8905: Military Treatment Facility
+8920: Comprehensive Inpatient Rehabilitation Facility
+8941: Tribal 638 Free-standing Facility
+8949: End-Stage Renal Disease Treatment Facility
+8957: Residential Substance Abuse Treatment Facility
+8964: Community Mental Health Center
+8968: Indian Health Service Free-standing Facility
+8970: Inpatient Long-term Care
+8974: Non-residential Substance Abuse Treatment Facility
+8977: Public Health Clinic
+38003620: Walk-in Retail Health Clinic
+8536: Home
+8546: Hospice
+8584: Mobile Unit
+8615: Assisted Living Facility
+8668: Ambulance - Land
+8676: Nursing Facility
+8716: Independent Clinic
+8756: Outpatient Hospital
+8809: Independent Laboratory
+8844: Other Place of Service
+8851: Group Home
+8863: Skilled Nursing Facility
+8882: Adult Living Care Facility
+8892: Other Inpatient Care
+8913: Psychiatric Facility-Partial Hospitalization
+8940: Office
+8947: Comprehensive Outpatient Rehabilitation Facility
+8951: Intermediate Care Facility/Mentally Retarded
+8960: Tribal 638 Provider-based Facility
+8966: Federally Qualified Health Center
+8969: Indian Health Service Provider-based Facility
+8971: Inpatient Psychiatric Facility
+8976: Psychiatric Residential Treatment Center
+38003619: Prison/Correctional Facility
+5083: Telehealth
+581379: Inpatient Critical Care Facility
+581381: Emergency Room Critical Care Facility
+581383: Inpatient Cardiac Care Facility
+581385: Observation Room
+581399: Interactive Telemedicine Service
+5084: Off Campus-Outpatient Hospital
+581380: Outpatient Critical Care Facility
+581382: Inpatient Intensive Care Facility
+581384: Inpatient Nursery
+581475: Place of Employment-Worksite
+38004684: Individual Certified Orthotist
+38004686: Individual Certified Prosthetist-Orthotist
+38004688: Ambulance Service Provider
+38004690: Voluntary Health or Charitable Agency
+38004692: Clinical Laboratory
+38004694: Registered Dietitian or Nutrition Professional
+38004696: Radiation Therapy Center
+38004698: All Other Suppliers
+38004700: Part B CAP Drug Vendor
+38004702: Indian Health Service facility
+38004446: General Practice
+38004448: Allergy/Immunology
+38004450: Anesthesiology
+38004453: Family Practice
+38004455: Gastroenterology
+38004457: Osteopathic Manipulative Therapy
+38004459: Neurosurgery
+38004463: Ophthalmology
+38004465: Orthopedic Surgery
+38004467: Plastic And Reconstructive Surgery
+38004469: Psychiatry
+38004472: Pulmonary Disease
+38004474: Urology
+38004476: Nuclear Medicine
+38004478: Geriatric Medicine
+38004480: Hand Surgery
+38004482: Certified Nurse Midwife
+38004484: Infectious Disease
+38004486: Podiatry
+38004488: Psychology
+38004490: Physical Therapy
+38004492: Occupational Therapy
+38004494: Pain Management
+38004496: Vascular Surgery
+38004498: Addiction Medicine
+38004500: Critical care (intensivist)
+38004502: Hematology/Oncology
+38004504: Maxillofacial Surgery
+38004506: Certified Clinical Nurse Specialist
+38004508: Surgical Oncology
+38004510: Emergency Medicine
+38004512: Physician Assistant
+38004515: Hospital
+38004517: Intermediate Care Nursing Facility
+38004519: Home Health Agency
+38004521: Medical Supply Company with Respiratory Therapist
+38004523: Grocery Store
+38004525: Medical Supply Company with Pedorthic Personnel
+38004675: Physician/Diagnostic Radiology
+38004677: Mammography Center
+38004679: Ambulatory Surgical Center
+38004682: Medical Supply Company with Orthotist-Prosthetist
+38004685: Individual Certified Prosthetist
+38004687: Medical Supply Company with Pharmacist
+38004689: Public Health or Welfare Agency
+38004691: Portable X-Ray Supplier
+38004693: Clinic or Group Practice
+38004695: Mass Immunizer Roster Biller
+38004697: Slide Preparation Facility
+38004699: Unknown Supplier/Provider Specialty
+38004701: Optician
+38004703: Oxygen supplier
+38004447: General Surgery
+38004449: Otolaryngology
+38004451: Cardiology
+38004452: Dermatology
+38004454: Interventional Pain Management (IPM)
+38004456: Internal Medicine
+38004458: Neurology
+38004461: Obstetrics/Gynecology
+38004464: Oral Surgery
+38004466: Pathology
+38004468: Physical Medicine And Rehabilitation
+38004471: Colorectal Surgery
+38004473: Thoracic Surgery
+38004475: Chiropractic
+38004477: Pediatric Medicine
+38004479: Nephrology
+38004481: Optometry
+38004483: Certified Registered Nurse Anesthetist
+38004485: Endocrinology
+38004487: Nurse Practitioner
+38004489: Audiology
+38004491: Rheumatology
+38004493: Clinical Psychology
+38004495: Peripheral Vascular Disease
+38004497: Cardiac Surgery
+38004499: Licensed Clinical Social Worker
+38004501: Hematology
+38004503: Preventive Medicine
+38004505: Neuropsychiatry
+38004507: Medical Oncology
+38004509: Radiation Oncology
+38004511: Interventional Radiology
+38004513: Gynecology/Oncology
+38004514: Unknown Physician Specialty
+38004516: Skilled Nursing Facility
+38004518: Other Nursing Facility
+38004520: Pharmacy
+38004522: Department Store
+38004524: Pedorthic Personnel
+38004526: Rehabilitation Agency
+38004676: Anesthesiology Assistant
+38004678: Independent Diagnostic Testing Facility
+38004680: Medical Supply Company with Orthotist
+38004681: Medical Supply Company with Prosthetist
+38004683: Other Medical Supply Company
+45890994: Period of complete data capture based on geographic isolation
+45747656: Pre-qualification time period
+44814724: Period covering healthcare encounters
+44814722: Period while enrolled in insurance
+44814725: Period inferred by algorithm
+44814723: Period while enrolled in study
+9201: Inpatient Visit
+9202: Outpatient Visit
+9203: Emergency Room Visit
+42898160: Long Term Care Visit
+44818519: Clinical Study visit
+44818518: Visit derived from EHR record
+44818517: Visit derived from encounter on claim
+5086: Condition tested for by diagnostic procedure
+32019: EHR billing diagnosis
+32020: EHR encounter diagnosis
+38000245: EHR problem list entry
+42894222: EHR Chief Complaint
+42898140: Referral record
+43542353: Observation recorded from EHR
+44786627: Primary Condition
+44786628: First Position Condition
+44786629: Secondary Condition
+38000246: Condition era - 0 days persistence window
+38000199: Inpatient header- primary
+38000200: Inpatient header - 1st position
+38000201: Inpatient header - 2nd position
+38000202: Inpatient header - 3rd position
+38000203: Inpatient header - 4th position
+38000204: Inpatient header - 5th position
+38000205: Inpatient header - 6th position
+38000206: Inpatient header - 7th position
+38000207: Inpatient header - 8th position
+38000208: Inpatient header - 9th position
+38000209: Inpatient header - 10th position
+38000210: Inpatient header - 11th position
+38000211: Inpatient header - 12th position
+38000212: Inpatient header - 13th position
+38000213: Inpatient header - 14th position
+38000214: Inpatient header - 15th position
+38000183: Inpatient detail - primary
+38000184: Inpatient detail - 1st position
+38000185: Inpatient detail - 2nd position
+38000186: Inpatient detail - 3rd position
+38000187: Inpatient detail - 4th position
+38000188: Inpatient detail - 5th position
+38000189: Inpatient detail - 6th position
+38000190: Inpatient detail - 7th position
+38000191: Inpatient detail - 8th position
+38000192: Inpatient detail - 9th position
+38000193: Inpatient detail - 10th position
+38000194: Inpatient detail - 11th position
+38000195: Inpatient detail - 12th position
+38000196: Inpatient detail - 13th position
+38000197: Inpatient detail - 14th position
+38000198: Inpatient detail - 15th position
+38000230: Outpatient header - 1st position
+38000231: Outpatient header - 2nd position
+38000232: Outpatient header - 3rd position
+38000233: Outpatient header - 4th position
+38000234: Outpatient header - 5th position
+38000235: Outpatient header - 6th position
+38000236: Outpatient header - 7th position
+38000237: Outpatient header - 8th position
+38000238: Outpatient header - 9th position
+38000239: Outpatient header - 10th position
+38000240: Outpatient header - 11th position
+38000241: Outpatient header - 12th position
+38000242: Outpatient header - 13th position
+38000243: Outpatient header - 14th position
+38000244: Outpatient header - 15th position
+38000215: Outpatient detail - 1st position
+38000216: Outpatient detail - 2nd position
+38000217: Outpatient detail - 3rd position
+38000218: Outpatient detail - 4th position
+38000219: Outpatient detail - 5th position
+38000220: Outpatient detail - 6th position
+38000221: Outpatient detail - 7th position
+38000222: Outpatient detail - 8th position
+38000223: Outpatient detail - 9th position
+38000224: Outpatient detail - 10th position
+38000225: Outpatient detail - 11th position
+38000226: Outpatient detail - 12th position
+38000227: Outpatient detail - 13th position
+38000228: Outpatient detail - 14th position
+38000229: Outpatient detail - 15th position
+45756835: Carrier claim header - 1st position
+45756836: Carrier claim header - 2nd position
+45756837: Carrier claim header - 3rd position
+45756838: Carrier claim header - 4th position
+45756839: Carrier claim header - 5th position
+45756840: Carrier claim header - 6th position
+45756841: Carrier claim header - 7th position
+45756842: Carrier claim header - 8th position
+45756843: Carrier claim detail - 1st position
+45756844: Carrier claim detail - 2nd position
+45756845: Carrier claim detail - 3rd position
+45756846: Carrier claim detail - 4th position
+45756847: Carrier claim detail - 5th position
+45756848: Carrier claim detail - 6th position
+45756849: Carrier claim detail - 7th position
+45756850: Carrier claim detail - 8th position
+45756851: Carrier claim detail - 9th position
+45756852: Carrier claim detail - 10th position
+45756853: Carrier claim detail - 11th position
+45756854: Carrier claim detail - 12th position
+45756855: Carrier claim detail - 13th position
+38003621: Procedure recorded as lab test
+38003622: Procedure recorded as diagnostic code
+42865905: Facility header
+42898141: Referral record
+581412: Procedure Recorded from a Survey
+42865906: Condition Procedure
+44786630: Primary Procedure
+44786631: Secondary Procedure
+43542354: Physician administered drug (identified as procedure)
+257: Hospitalization Cost Record
+38000275: EHR order list entry
+38000250: Inpatient header - primary position
+38000251: Inpatient header - 1st position
+38000252: Inpatient header - 2nd position
+38000253: Inpatient header - 3rd position
+38000254: Inpatient header - 4th position
+38000255: Inpatient header - 5th position
+38000256: Inpatient header - 6th position
+38000257: Inpatient header - 7th position
+38000258: Inpatient header - 8th position
+38000259: Inpatient header - 9th position
+38000260: Inpatient header - 10th position
+38000261: Inpatient header - 11th position
+38000262: Inpatient header - 12th position
+38000263: Inpatient header - 13th position
+38000264: Inpatient header - 14th position
+38000265: Inpatient header - 15th position
+38000248: Inpatient detail - primary position
+38000249: Inpatient detail - 1st position
+38000268: Outpatient header - primary position
+38000269: Outpatient header - 1st position
+38000270: Outpatient header - 2nd position
+38000271: Outpatient header - 3rd position
+38000272: Outpatient header - 4th position
+38000273: Outpatient header - 5th position
+38000274: Outpatient header - 6th position
+38000266: Outpatient detail - primary position
+38000267: Outpatient detail - 1st position
+45756857: Outpatient detail - 3rd position
+45756858: Outpatient detail - 4th position
+45756859: Outpatient detail - 5th position
+45756860: Outpatient detail - 6th position
+45756861: Outpatient detail - 7th position
+45756862: Outpatient detail - 8th position
+45756863: Outpatient detail - 9th position
+45756864: Outpatient detail - 10th position
+45756865: Outpatient detail - 11th position
+45756866: Outpatient detail - 12th position
+45756867: Outpatient detail - 13th position
+45756868: Outpatient detail - 14th position
+45756869: Outpatient detail - 15th position
+45756870: Outpatient detail - 16th position
+45756871: Outpatient detail - 17th position
+45756872: Outpatient detail - 18th position
+45756873: Outpatient detail - 19th position
+45756874: Outpatient detail - 20th position
+45756875: Outpatient detail - 21th position
+45756876: Outpatient detail - 22th position
+45756877: Outpatient detail - 23th position
+45756878: Outpatient detail - 24th position
+45756879: Outpatient detail - 25th position
+45756880: Outpatient detail - 26th position
+45756881: Outpatient detail - 27th position
+45756882: Outpatient detail - 28th position
+45756883: Outpatient detail - 29th position
+45756884: Outpatient detail - 30th position
+45756885: Outpatient detail - 31th position
+45756886: Outpatient detail - 32th position
+45756887: Outpatient detail - 33th position
+45756888: Outpatient detail - 34th position
+45756889: Outpatient detail - 35th position
+45756890: Outpatient detail - 36th position
+45756891: Outpatient detail - 37th position
+45756892: Outpatient detail - 38th position
+45756893: Outpatient detail - 39th position
+45756894: Outpatient detail - 40th position
+45756895: Outpatient detail - 41th position
+45756896: Outpatient detail - 42th position
+45756897: Outpatient detail - 43th position
+45756898: Outpatient detail - 44th position
+45756899: Outpatient detail - 45th position
+45756900: Carrier claim detail - 1st position
+45756901: Carrier claim detail - 2nd position
+45756902: Carrier claim detail - 3rd position
+45756903: Carrier claim detail - 4th position
+45756904: Carrier claim detail - 5th position
+45756905: Carrier claim detail - 6th position
+45756906: Carrier claim detail - 7th position
+45756907: Carrier claim detail - 8th position
+45756908: Carrier claim detail - 9th position
+45756909: Carrier claim detail - 10th position
+45756910: Carrier claim detail - 11th position
+45756911: Carrier claim detail - 12th position
+45756912: Carrier claim detail - 13th position
+4177340: Body height measure
+4178502: Body weight measure
+4245997: Body mass index
+4154790: Diastolic blood pressure
+4152194: Systolic blood pressure
+4156660: Fasting blood glucose measurement
+4008265: Total cholesterol measurement
+44818703: Pathology finding
+44818701: From physical examination
+44818704: Patient reported value
+44818702: Lab result
+45754907: Derived value
+5001: Test ordered through EHR
+4172704: >
+4171755: >=
+4172703: =
+4171754: <=
+4171756: <
+42898160: Long Term Care Visit
+9202: Outpatient Visit
+9203: Emergency Room Visit
+9201: Inpatient Visit
+262: Emergency Room and Inpatient Visit
+581458: Pharmacy visit
+581476: Home Visit
+581478: Ambulance Visit
+32036: Laboratory Visit
+581477: Office Visit
+581479: Rehabilitation Visit
+32037: Intensive Care
+44818518: Visit derived from EHR record
+44818519: Clinical Study visit
+44818517: Visit derived from encounter on claim
+32021: Visit derived from encounter on medical claim
+32023: Visit derived from encounter on medical facility claim
+32025: Visit derived from encounter on medical facility claim paid
+32027: Visit derived from encounter on medical facility claim deferred
+32029: Visit derived from encounter on medical professional claim denied
+32031: Visit derived from encounter on claim authorization
+32033: Visit derived from encounter on dental claim
+32035: Visit derived from EHR encounter record
+32022: Visit derived from encounter on pharmacy claim
+32024: Visit derived from encounter on medical professional claim
+32026: Visit derived from encounter on medical facility claim denied
+32028: Visit derived from encounter on medical professional claim paid
+32030: Visit derived from encounter on medical professional claim deferred
+32032: Visit derived from encounter on vision claim
+32034: Visit derived from EHR billing record
