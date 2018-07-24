@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="427566f8-6d34-4c18-8f61-7bf88d834919" name="Default" comment="" />
+    <list default="true" id="427566f8-6d34-4c18-8f61-7bf88d834919" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Table_last_ids.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Constants.py" afterPath="$PROJECT_DIR$/Constants.py" />
+      <change beforePath="$PROJECT_DIR$/FileControl.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Mapping.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MappingAll.py" afterPath="$PROJECT_DIR$/MappingAll.py" />
+      <change beforePath="$PROJECT_DIR$/Process.py" afterPath="$PROJECT_DIR$/Process.py" />
+      <change beforePath="$PROJECT_DIR$/PythonETL(V1.1).zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL(V1.2).zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL(V1.2.1).zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL(V1.3).zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/Constants.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/MappingAll.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/CareSite.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/ConditionOccurrence.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/Death.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/DrugExposure.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/Measurement.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/Observation.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/Person.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/ProcedureOccurrence.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/Sequencing.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/VariantOccurrence.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/VisitOccurrence.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/data/ihc_sample.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PythonETL/log_status.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Table_ID_Value.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/ConditionOccurrence.csv" afterPath="$PROJECT_DIR$/data/ConditionOccurrence.csv" />
+      <change beforePath="$PROJECT_DIR$/data/Death.csv" afterPath="$PROJECT_DIR$/data/Death.csv" />
+      <change beforePath="$PROJECT_DIR$/data/DrugExposure.csv" afterPath="$PROJECT_DIR$/data/DrugExposure.csv" />
+      <change beforePath="$PROJECT_DIR$/data/Measurement.csv" afterPath="$PROJECT_DIR$/data/Measurement.csv" />
+      <change beforePath="$PROJECT_DIR$/data/Observation.csv" afterPath="$PROJECT_DIR$/data/Observation.csv" />
+      <change beforePath="$PROJECT_DIR$/data/Person.csv" afterPath="$PROJECT_DIR$/data/Person.csv" />
+      <change beforePath="$PROJECT_DIR$/data/ProcedureOccurrence.csv" afterPath="$PROJECT_DIR$/data/ProcedureOccurrence.csv" />
+      <change beforePath="$PROJECT_DIR$/data/Sequencing.csv" afterPath="$PROJECT_DIR$/data/Sequencing.csv" />
+      <change beforePath="$PROJECT_DIR$/data/VariantOccurrence.csv" afterPath="$PROJECT_DIR$/data/VariantOccurrence.csv" />
+      <change beforePath="$PROJECT_DIR$/data/VisitOccurrence.csv" afterPath="$PROJECT_DIR$/data/VisitOccurrence.csv" />
+      <change beforePath="$PROJECT_DIR$/data/ihc_sample.csv" afterPath="$PROJECT_DIR$/data/ihc_sample.csv" />
+      <change beforePath="$PROJECT_DIR$/ihc_sample.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/qiushibaike2.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test.py" afterPath="" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,73 +55,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="MappingAll.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MappingAll.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="349" column="82" lean-forward="false" selection-start-line="349" selection-start-column="82" selection-end-line="349" selection-end-column="82" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#1769#3449#0" expanded="false" />
+                <element signature="e#3487#7237#0" expanded="false" />
+                <element signature="e#7284#13729#0" expanded="false" />
+                <element signature="e#19052#22400#0" expanded="false" />
+                <element signature="e#22437#24498#0" expanded="false" />
+                <element signature="e#24540#30675#0" expanded="false" />
+                <element signature="e#37287#41768#0" expanded="false" />
+                <element signature="e#41811#55829#0" expanded="false" />
+                <element signature="e#54772#55566#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table_last_ids.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Table_last_ids.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="log_status.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log_status.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mapping.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mapping.py">
+      <file leaf-file-name="Process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2247">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="420">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
-                <element signature="e#1#20#0" expanded="true" />
-                <element signature="e#313#419#1" expanded="false" />
-                <element signature="e#5830#10692#0" expanded="false" />
-                <element signature="e#10735#14346#0" expanded="false" />
-                <element signature="e#19923#25929#0" expanded="false" />
-                <element signature="e#25979#29610#0" expanded="false" />
-                <element signature="e#29662#32287#0" expanded="false" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MappingAll.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MappingAll.py">
+      <file leaf-file-name="VCF2GCDM.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VCF2GCDM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            <state relative-caret-position="810">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#1#20#0" expanded="true" />
-                <element signature="e#2751#6298#0" expanded="false" />
-                <element signature="e#6345#12878#0" expanded="false" />
-                <element signature="e#12929#17566#0" expanded="false" />
-                <element signature="e#17609#20962#0" expanded="false" />
-                <element signature="e#20999#22944#0" expanded="false" />
-                <element signature="e#22986#28953#0" expanded="false" />
-                <element signature="e#29003#32438#0" expanded="false" />
-                <element signature="e#32490#35264#0" expanded="false" />
-                <element signature="e#35308#39881#0" expanded="false" />
-                <element signature="e#39924#53955#0" expanded="false" />
-                <element signature="e#53989#54465#0" expanded="false" />
-                <element signature="e#54496#54771#0" expanded="false" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+      <file leaf-file-name="VCF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VCF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Records.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Records.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,19 +133,22 @@
       <file leaf-file-name="Constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="-1553">
+              <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
               <folding>
-                <element signature="e#401#734#0" expanded="false" />
-                <element signature="e#762#898#0" expanded="false" />
-                <element signature="e#930#1041#0" expanded="false" />
-                <element signature="e#1077#1547#0" expanded="false" />
-                <element signature="e#1087#1312#0" expanded="false" />
-                <element signature="e#1322#1547#0" expanded="false" />
-                <element signature="e#1583#1664#0" expanded="false" />
-                <element signature="e#1693#2141#0" expanded="false" />
-                <element signature="e#2171#2920#0" expanded="false" />
+                <element signature="e#2046#2522#0" expanded="false" />
+                <element signature="e#2552#3301#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Records.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Records.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,24 +164,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>if</find>
-      <find>PRIMARY_HISTOLOGY_DSC</find>
-      <find>TREAMMENTTYPE</find>
-      <find>TYPE</find>
-      <find>TX_REASON_DSC</find>
-      <find>loc[</find>
-      <find>isnull</find>
-      <find>N_DSC</find>
-      <find>dropna</find>
-      <find>df.to_csv</find>
-      <find>prin</find>
       <find>DictSequencing</find>
       <find>TX_TYPE_DSC</find>
       <find>171001</find>
       <find>visit_occurrence_id</find>
       <find>17100</find>
       <find>4322976</find>
-      <find>DictCareSite</find>
       <find>AGENT_DSC</find>
       <find>FCILTY_ID</find>
       <find>Adjuvant</find>
@@ -139,37 +177,56 @@
       <find>CaresiteDict</find>
       <find>44818518</find>
       <find>care_site_id</find>
-      <find>visit_ocrrenece_id_treatment_start</find>
       <find>drop_duplicates</find>
       <find>&quot;RECURRENCE_DT&quot;, &quot;RECURRENCE_SITE&quot;</find>
       <find>res</find>
       <find>pri</find>
+      <find>DictCareSite</find>
+      <find>self.Dict[</find>
+      <find>self.Dict</find>
+      <find>person_id</find>
+      <find>DX_CODE_CD</find>
+      <find>visit_ocrrenece_id_treatment_start</find>
+      <find>Soft Tissue</find>
+      <find>self</find>
+      <find>visitOcurrenceID=visitOcurrenceID+1</find>
+      <find>+1</find>
+      <find>date_</find>
+      <find>dropna</find>
+      <find>try</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/log_status.py" />
         <option value="$PROJECT_DIR$/spiderweibo.py" />
         <option value="$PROJECT_DIR$/Demo.py" />
         <option value="$PROJECT_DIR$/JsonMapping.py" />
         <option value="$PROJECT_DIR$/Records.py" />
         <option value="$PROJECT_DIR$/FileControl.py" />
+        <option value="$PROJECT_DIR$/Mapping.py" />
+        <option value="$PROJECT_DIR$/Table_last_ids.py" />
         <option value="$PROJECT_DIR$/Table_ID_Value.py" />
+        <option value="$PROJECT_DIR$/log_status.py" />
+        <option value="$PROJECT_DIR$/Constants.py" />
         <option value="$PROJECT_DIR$/Process.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/Mapping.py" />
-        <option value="$PROJECT_DIR$/Constants.py" />
+        <option value="$PROJECT_DIR$/Patient.py" />
+        <option value="$PROJECT_DIR$/VCF2GCDM.py" />
         <option value="$PROJECT_DIR$/MappingAll.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -186,7 +243,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,6 +254,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,60 +274,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.MappingAll">
-    <configuration name="Constants" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IM2CDM_ETL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Constants.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IM2CDM_ETL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Mapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IM2CDM_ETL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mapping.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="MappingAll" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -284,6 +287,60 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IM2CDM_ETL" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MappingAll.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Patient" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IM2CDM_ETL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Table_last_ids" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IM2CDM_ETL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Table_last_ids.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="VCF2GCDM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IM2CDM_ETL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VCF2GCDM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,19 +365,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Mapping" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Demo" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Constants" />
-      <item index="4" class="java.lang.String" itemvalue="Python.MappingAll" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.MappingAll" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Table_last_ids" />
+      <item index="3" class="java.lang.String" itemvalue="Python.VCF2GCDM" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Patient" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.MappingAll" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Constants" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Patient" />
         <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Mapping" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Demo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.VCF2GCDM" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Table_last_ids" />
       </list>
     </recent_temporary>
   </component>
@@ -341,18 +398,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15416667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31381217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -360,6 +415,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -369,17 +425,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24585876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14171235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27292818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15416667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39930254" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -387,130 +443,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Mapping.py</url>
-          <line>442</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Constants.py</url>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding>
-            <element signature="e#401#734#0" expanded="false" />
-            <element signature="e#762#898#0" expanded="false" />
-            <element signature="e#930#1041#0" expanded="false" />
-            <element signature="e#1077#1547#0" expanded="false" />
-            <element signature="e#1087#1312#0" expanded="false" />
-            <element signature="e#1322#1547#0" expanded="false" />
-            <element signature="e#1583#1664#0" expanded="false" />
-            <element signature="e#1693#2141#0" expanded="false" />
-            <element signature="e#2171#2920#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spiderweibo.py" />
-    <entry file="file://$PROJECT_DIR$/Demo.py" />
-    <entry file="file://$PROJECT_DIR$/log_status.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding>
-            <element signature="e#401#734#0" expanded="false" />
-            <element signature="e#762#898#0" expanded="false" />
-            <element signature="e#930#1041#0" expanded="false" />
-            <element signature="e#1077#1547#0" expanded="false" />
-            <element signature="e#1087#1312#0" expanded="false" />
-            <element signature="e#1322#1547#0" expanded="false" />
-            <element signature="e#1583#1664#0" expanded="false" />
-            <element signature="e#1693#2141#0" expanded="false" />
-            <element signature="e#2171#2920#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spiderweibo.py" />
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="52" column="83" lean-forward="true" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_status.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3930">
-          <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1768160746/nt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
@@ -530,15 +467,8 @@
         <state relative-caret-position="300">
           <caret line="480" column="0" lean-forward="true" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
           <folding>
-            <element signature="e#401#734#0" expanded="false" />
-            <element signature="e#762#898#0" expanded="false" />
-            <element signature="e#930#1041#0" expanded="false" />
-            <element signature="e#1077#1547#0" expanded="false" />
-            <element signature="e#1087#1312#0" expanded="false" />
-            <element signature="e#1322#1547#0" expanded="false" />
-            <element signature="e#1583#1664#0" expanded="false" />
-            <element signature="e#1693#2141#0" expanded="false" />
-            <element signature="e#2171#2920#0" expanded="false" />
+            <element signature="e#2046#2522#0" expanded="false" />
+            <element signature="e#2552#3301#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -547,26 +477,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapping.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1768160746/nt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
@@ -581,37 +495,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/log_status.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapping.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1768160746/nt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
@@ -626,92 +518,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/log_status.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapping.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/log_status.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapping.py" />
     <entry file="file://$PROJECT_DIR$/log_status.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="82" column="12" lean-forward="true" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapping.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1768160746/nt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
@@ -733,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python3.5/Lib/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="716" column="0" lean-forward="false" selection-start-line="716" selection-start-column="0" selection-end-line="716" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python3.5/Lib/site-packages/pandas/core/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -747,39 +572,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python3.5/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99270">
-          <caret line="3403" column="8" lean-forward="false" selection-start-line="3403" selection-start-column="8" selection-end-line="3403" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JsonMapping.py" />
     <entry file="file://$PROJECT_DIR$/Demo.py" />
     <entry file="file://$PROJECT_DIR$/spiderweibo.py" />
+    <entry file="file://D:/Python3.5/Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="478" column="8" lean-forward="false" selection-start-line="478" selection-start-column="8" selection-end-line="478" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileControl.py" />
+    <entry file="file://D:/Python3.5/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="1432" column="8" lean-forward="false" selection-start-line="1432" selection-start-column="8" selection-end-line="1432" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python3.5/Lib/site-packages/pip/_vendor/distlib/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48930">
+          <caret line="1642" column="30" lean-forward="false" selection-start-line="1642" selection-start-column="30" selection-end-line="1642" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1768160746/_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="99" column="4" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/Constants.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/Constants.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$2/Constants.py" />
+    <entry file="file://D:/Python3.5/Lib/_strptime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="107" column="8" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python3.5/Lib/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16410">
+          <caret line="589" column="27" lean-forward="false" selection-start-line="589" selection-start-column="22" selection-end-line="589" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1768160746/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3574" column="8" lean-forward="false" selection-start-line="3574" selection-start-column="8" selection-end-line="3574" selection-end-column="8" />
+        <state relative-caret-position="150150">
+          <caret line="5005" column="8" lean-forward="false" selection-start-line="5005" selection-start-column="8" selection-end-line="5005" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileControl.py">
+    <entry file="file://$PROJECT_DIR$/VCF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Table_ID_Value.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -787,92 +654,70 @@
     <entry file="file://$PROJECT_DIR$/Process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#238#431#0" expanded="false" />
-            <element signature="e#565#1249#0" expanded="false" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log_status.py">
+    <entry file="file://$PROJECT_DIR$/Patient.py" />
+    <entry file="file://$PROJECT_DIR$/VCF2GCDM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="810">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Table_ID_Value.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/Table_last_ids.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapping.py">
+    <entry file="file://$PROJECT_DIR$/Mapping.py" />
+    <entry file="file://$PROJECT_DIR$/MappingAll.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2247">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="349" column="82" lean-forward="false" selection-start-line="349" selection-start-column="82" selection-end-line="349" selection-end-column="82" />
           <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#313#419#1" expanded="false" />
-            <element signature="e#5830#10692#0" expanded="false" />
-            <element signature="e#10735#14346#0" expanded="false" />
-            <element signature="e#19923#25929#0" expanded="false" />
-            <element signature="e#25979#29610#0" expanded="false" />
-            <element signature="e#29662#32287#0" expanded="false" />
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1769#3449#0" expanded="false" />
+            <element signature="e#3487#7237#0" expanded="false" />
+            <element signature="e#7284#13729#0" expanded="false" />
+            <element signature="e#19052#22400#0" expanded="false" />
+            <element signature="e#22437#24498#0" expanded="false" />
+            <element signature="e#24540#30675#0" expanded="false" />
+            <element signature="e#37287#41768#0" expanded="false" />
+            <element signature="e#41811#55829#0" expanded="false" />
+            <element signature="e#54772#55566#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="-1553">
+          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
           <folding>
-            <element signature="e#401#734#0" expanded="false" />
-            <element signature="e#762#898#0" expanded="false" />
-            <element signature="e#930#1041#0" expanded="false" />
-            <element signature="e#1077#1547#0" expanded="false" />
-            <element signature="e#1087#1312#0" expanded="false" />
-            <element signature="e#1322#1547#0" expanded="false" />
-            <element signature="e#1583#1664#0" expanded="false" />
-            <element signature="e#1693#2141#0" expanded="false" />
-            <element signature="e#2171#2920#0" expanded="false" />
+            <element signature="e#2046#2522#0" expanded="false" />
+            <element signature="e#2552#3301#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Records.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        <state relative-caret-position="90">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MappingAll.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-            <element signature="e#2751#6298#0" expanded="false" />
-            <element signature="e#6345#12878#0" expanded="false" />
-            <element signature="e#12929#17566#0" expanded="false" />
-            <element signature="e#17609#20962#0" expanded="false" />
-            <element signature="e#20999#22944#0" expanded="false" />
-            <element signature="e#22986#28953#0" expanded="false" />
-            <element signature="e#29003#32438#0" expanded="false" />
-            <element signature="e#32490#35264#0" expanded="false" />
-            <element signature="e#35308#39881#0" expanded="false" />
-            <element signature="e#39924#53955#0" expanded="false" />
-            <element signature="e#53989#54465#0" expanded="false" />
-            <element signature="e#54496#54771#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

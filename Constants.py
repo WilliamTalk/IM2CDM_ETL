@@ -1,88 +1,101 @@
-class PersonDict(object):
+class PersonDict():
     GENDER={
-        "F": 8532,
-        "M": 8507,
-        "U": 8551
+        "F":"8532",
+        "M":"8507",
+        "U":"8551"
     }
     RACE={
-        "AMERICAN INDIAN OR ALASKA NATIVE": 8657,
-        "ASIAN": 8515,
-        "BLACK OR AFRICAN AMERICAN": 8516,
-        "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER": 8557,
-        "WHITE": 8527,
-        "UNKNOWN/UNAVAILABLE": 8552,
-        "HISPANIC":4188159
+        "AMERICAN INDIAN OR ALASKA NATIVE":"8657",
+        "ASIAN":"8515",
+        "BLACK OR AFRICAN AMERICAN":"8516",
+        "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER":"8557",
+        "WHITE":"8527",
+        "UNKNOWN/UNAVAILABLE":"8552",
+        "HISPANIC":"4188159"
     }
 class DeathDict:
     DEATHTYPE={
-       "Unrelated to Disease":173000,
-       "Unrelated to Cancer but with Disease":173003,
-       "Unknown cause but with Disease":173002,
-       "Secondary Primary Cancer":173004,
-       "Complications of Treatment":173001,
-       "Primary Cancer":4312326,
-       "Unknown cause and unknown Disease Status":441413
+       "Unrelated to Disease":"173000",
+       "Unrelated to Cancer but with Disease":"173003",
+       "Unknown cause but with Disease":"173002",
+       "Secondary Primary Cancer":"173004",
+       "Complications of Treatment":"173001",
+       "Primary Cancer":"4312326",
+       "Unknown cause and unknown Disease Status":"441413"
     }
 class ObservationDict:
     TREAMMENTlINE={
-        "Adjuvant":40272698,
-        "1st Line":45769570,
-        "2nd Line":45769571,
-        "3rd Line":45769572
+        "Adjuvant":"40272698",
+        "1st Line":"45769570",
+        "2nd Line":"45769571",
+        "3rd Line":"45769572"
     }
 class VisitOccurenceDict:
 
     VISITTYPE={
-        "Visit derived from EHR record":44818518
+        "Visit derived from EHR record":"44818518"
 
     }
     VISIT={
-        "Outpatient":9202
+        "Outpatient":"9202"
     }
 class ConditionOccurrenceDict:
     CONDITION={
-        "C186": 443382,
-        "C180": 443391,
-        "C183": 4180791,
-        "C184": 443384,
-        "C181": 443383,
-        "C199": 4180792,
-        "C187": 443381,
-        "C182": 435754,
-        "C185": 4181344
+        "C186":"443382",
+        "C180":"443391",
+        "C183":"4180791",
+        "C184":"443384",
+        "C181":"443383",
+        "C199":"4180792",
+        "C187":"443381",
+        "C182":"435754",
+        "C185":"4181344"
     }
     SITE={
-        "Soft Tissue":4338971,
-        "Lung":4213162,
-        "Local/Regional":174003,
-        "Liver": 4009105,
-        "Bone": 4154333,
-        "CNS": 4063669,
-        "Lymph Nodes": 4241958,
-        "Other": 9177
+        "Soft Tissue":"4338971",
+        "Lung":"4213162",
+        "Local/Regional":"174003",
+        "Liver":"4009105",
+        "Bone":"4154333",
+        "CNS":"4063669",
+        "Lymph Nodes":"4241958",
+        "Other":"9177"
 
     }
 class ProcedureOccurrenceDict:
     TREAMMENTTYPE={
-        "Chemotherapy":4273629,
-        "Radiation":4220084
+        "Chemotherapy":"4273629",
+        "Radiation":"4220084"
+    }
+class VariantOccurrenceDict:
+    TYPE = {
+        "MSI":"172012",
+        "PMS2":"172017",
+        "MSH6":"172011",
+        "MLH1":"172009",
+        "BRAF":"172002",
+        "EGFR":"172003",
+        "PIK3CA":"172016",
+        "KRAS":"172008",
+        "MSH2":"172010",
+        "NARS":"172013"
     }
 class DrugExposureDict:
     Drug={
-        "FOLFOX":173005,
-        "Bevacizumab":173006,
-        "Capecitabine":173007,
-        "Erbitux":173008,
-        "Irinotecan Hydrochloride":173009,
-        "Oxaliplatin":173010,
-        "Cetuximab":173011,
-        "Panitumumab":173012,
-        "FOLFIRI":173013,
-        "Fluorouracil":173014,
-        "Stivarga":173015,
-        "Mitomycin C":173016,
-        "Other Specified Antibiotics":173010,
-        "External Beam":4036742
+        "FOLFOX":"173005",
+        "Bevacizumab":"173006",
+        "Capecitabine":"173007",
+        "Erbitux":"173008",
+        "Irinotecan Hydrochloride":"173009",
+        "Oxaliplatin":"173010",
+        "Cetuximab":"173011",
+        "Panitumumab":"173012",
+        "FOLFIRI":"173013",
+        "Fluorouracil":"173014",
+        "Stivarga":"173015",
+        "Mitomycin C":"173016",
+        "Other Specified Antibiotics":"173010",
+        "External Beam":"4036742"
 
     }
 class IHCFields(object):

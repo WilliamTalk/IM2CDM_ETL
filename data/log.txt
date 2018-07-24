@@ -1,0 +1,295 @@
+time:2018-07-19 10:12:46......reading the ihc_sample data
+time:2018-07-19 10:12:46......finished reading ihc_sample data
+time:2018-07-19 10:12:46......Table Care Site is in processing
+time:2018-07-19 10:12:46......Table Care Site is done
+time:2018-07-19 10:12:46......Table Person is in processing
+time:2018-07-19 10:12:47......Table Person is done
+time:2018-07-19 10:12:47......Table Visit Occurrence is in processing
+time:2018-07-19 10:12:47......Table Visit Occurrence is done
+time:2018-07-19 10:12:47......Table Condition Occurrence is in processing
+time:2018-07-19 10:12:48......Table Condition Occurrence is done
+time:2018-07-19 10:12:48......Table Observation is in processing
+time:2018-07-19 10:12:48......Table Observation is done
+time:2018-07-19 10:12:48......Table Death is in processing
+time:2018-07-19 10:12:48......Table Death is done
+time:2018-07-19 10:12:48......Table Sequencing is  in processing
+time:2018-07-19 10:12:49......Table Sequenceing is done
+time:2018-07-19 10:12:49......Table Variant Occurrence is in processing
+time:2018-07-19 10:12:49......Table Variant Occurrence is done
+time:2018-07-19 10:12:49......Table procedure Occurrence is in processing
+time:2018-07-19 10:12:49......Table Procedure Occurrence is done 
+time:2018-07-19 10:12:49......Table Drug Exposure is in processing
+time:2018-07-19 10:12:50......Table Drug Exposure is done
+time:2018-07-19 10:12:50......Table Measurement is in processing
+time:2018-07-19 10:12:50......Table Mesurement is done
+time:2018-07-19 10:12:50......transform is in processing 
+time:2018-07-19 10:12:50......transform is completed
+time:2018-07-19 10:12:50......the processing finish in 3.763052373333333 seconds
+time:2018-07-19 10:14:20......reading the ihc_sample data
+time:2018-07-19 10:14:20......finished reading ihc_sample data
+time:2018-07-19 10:14:20......transform is in processing 
+time:2018-07-19 10:14:20......Table Care Site is in processing
+time:2018-07-19 10:14:20......Table Care Site is done
+time:2018-07-19 10:14:20......Table Person is in processing
+time:2018-07-19 10:14:20......Table Person is done
+time:2018-07-19 10:14:20......Table Visit Occurrence is in processing
+time:2018-07-19 10:14:22......Table Visit Occurrence is done
+time:2018-07-19 10:14:22......Table Condition Occurrence is in processing
+time:2018-07-19 10:14:22......Table Condition Occurrence is done
+time:2018-07-19 10:14:22......Table Observation is in processing
+time:2018-07-19 10:14:22......Table Observation is done
+time:2018-07-19 10:14:23......Table Death is in processing
+time:2018-07-19 10:14:23......Table Death is done
+time:2018-07-19 10:14:23......Table Sequencing is  in processing
+time:2018-07-19 10:14:23......Table Sequenceing is done
+time:2018-07-19 10:14:23......Table Variant Occurrence is in processing
+time:2018-07-19 10:14:23......Table Variant Occurrence is done
+time:2018-07-19 10:14:23......Table procedure Occurrence is in processing
+time:2018-07-19 10:14:24......Table Procedure Occurrence is done 
+time:2018-07-19 10:14:24......Table Drug Exposure is in processing
+time:2018-07-19 10:14:24......Table Drug Exposure is done
+time:2018-07-19 10:14:24......Table Measurement is in processing
+time:2018-07-19 10:14:25......Table Mesurement is done
+time:2018-07-19 10:14:25......transform is completed
+time:2018-07-19 10:14:25......the processing finish in 4.948910933333333 seconds
+time:2018-07-19 10:15:50......reading the ihc_sample data
+time:2018-07-19 10:15:51......finished reading ihc_sample data
+time:2018-07-19 10:15:51......transform is in processing 
+time:2018-07-19 10:15:51......Table Care Site is in processing
+time:2018-07-19 10:15:51......Table Care Site is done
+time:2018-07-19 10:15:51......Table Person is in processing
+time:2018-07-19 10:15:51......Table Person is done
+time:2018-07-19 10:15:51......Table Visit Occurrence is in processing
+time:2018-07-19 10:15:52......Table Visit Occurrence is done
+time:2018-07-19 10:15:52......Table Condition Occurrence is in processing
+time:2018-07-19 10:15:52......Table Condition Occurrence is done
+time:2018-07-19 10:15:52......Table Observation is in processing
+time:2018-07-19 10:15:53......Table Observation is done
+time:2018-07-19 10:15:53......Table Death is in processing
+time:2018-07-19 10:15:54......Table Death is done
+time:2018-07-19 10:15:54......transform is completed
+time:2018-07-19 10:15:54......the processing finish in 3.370169173333333 seconds
+time:2018-07-19 10:18:23......reading the ihc_sample data
+time:2018-07-19 10:18:24......finished reading ihc_sample data
+time:2018-07-19 10:18:24......transform is in processing 
+time:2018-07-19 10:18:24......Table Care Site is in processing
+time:2018-07-19 10:18:24......Table Care Site is done
+time:2018-07-19 10:18:24......Table Person is in processing
+time:2018-07-19 10:18:24......Table Person is done
+time:2018-07-19 10:18:24......Table Visit Occurrence is in processing
+time:2018-07-19 10:18:25......Table Visit Occurrence is done
+time:2018-07-19 10:18:25......Table Condition Occurrence is in processing
+time:2018-07-19 10:18:25......Table Condition Occurrence is done
+time:2018-07-19 10:18:25......Table Observation is in processing
+time:2018-07-19 10:18:26......Table Observation is done
+time:2018-07-19 10:18:26......Table Death is in processing
+time:2018-07-19 10:18:27......Table Death is done
+time:2018-07-19 10:18:27......transform is completed
+time:2018-07-19 10:18:27......the processing finish in 3.4670677333333333 seconds
+time:2018-07-19 10:19:32......reading the ihc_sample data
+time:2018-07-19 10:19:33......finished reading ihc_sample data
+time:2018-07-19 10:19:33......transform is in processing 
+time:2018-07-19 10:19:33......Table Care Site is in processing
+time:2018-07-19 10:19:33......Table Care Site is done
+time:2018-07-19 10:19:33......Table Person is in processing
+time:2018-07-19 10:19:33......Table Person is done
+time:2018-07-19 10:19:33......Table Visit Occurrence is in processing
+time:2018-07-19 10:19:35......Table Visit Occurrence is done
+time:2018-07-19 10:19:35......Table Condition Occurrence is in processing
+time:2018-07-19 10:19:36......Table Condition Occurrence is done
+time:2018-07-19 10:19:36......Table Observation is in processing
+time:2018-07-19 10:19:37......Table Observation is done
+time:2018-07-19 10:19:37......Table Death is in processing
+time:2018-07-19 10:19:37......Table Death is done
+time:2018-07-19 10:19:38......Table Sequencing is  in processing
+time:2018-07-19 10:19:39......Table Sequenceing is done
+time:2018-07-19 10:19:39......Table Variant Occurrence is in processing
+time:2018-07-19 10:19:39......Table Variant Occurrence is done
+time:2018-07-19 10:19:39......Table procedure Occurrence is in processing
+time:2018-07-19 10:19:41......Table Procedure Occurrence is done 
+time:2018-07-19 10:19:41......Table Drug Exposure is in processing
+time:2018-07-19 10:19:42......Table Drug Exposure is done
+time:2018-07-19 10:19:42......Table Measurement is in processing
+time:2018-07-19 10:19:43......Table Mesurement is done
+time:2018-07-19 10:19:43......transform is completed
+time:2018-07-19 10:19:43......the processing finish in 10.38903424 seconds
+time:2018-07-19 10:24:24......reading the ihc_sample data
+time:2018-07-19 10:24:24......finished reading ihc_sample data
+time:2018-07-19 10:24:24......transform is in processing 
+time:2018-07-19 10:24:24......Table Care Site is in processing
+time:2018-07-19 10:24:24......Table Care Site is done
+time:2018-07-19 10:24:24......Table Person is in processing
+time:2018-07-19 10:24:24......Table Person is done
+time:2018-07-19 10:24:24......Table Visit Occurrence is in processing
+time:2018-07-19 10:24:25......Table Visit Occurrence is done
+time:2018-07-19 10:24:25......Table Condition Occurrence is in processing
+time:2018-07-19 10:24:25......Table Condition Occurrence is done
+time:2018-07-19 10:24:25......Table Observation is in processing
+time:2018-07-19 10:24:26......Table Observation is done
+time:2018-07-19 10:24:26......Table Death is in processing
+time:2018-07-19 10:24:26......Table Death is done
+time:2018-07-19 10:24:26......Table Sequencing is  in processing
+time:2018-07-19 10:24:27......Table Sequenceing is done
+time:2018-07-19 10:24:27......Table Variant Occurrence is in processing
+time:2018-07-19 10:24:29......Table Variant Occurrence is done
+time:2018-07-19 10:24:29......Table procedure Occurrence is in processing
+time:2018-07-19 10:24:30......Table Procedure Occurrence is done 
+time:2018-07-19 10:24:30......Table Drug Exposure is in processing
+time:2018-07-19 10:24:30......Table Drug Exposure is done
+time:2018-07-19 10:24:30......Table Measurement is in processing
+time:2018-07-19 10:24:30......Table Mesurement is done
+time:2018-07-19 10:24:30......transform is completed
+time:2018-07-19 10:24:30......the processing finish in 6.624387413333333 seconds
+time:2018-07-19 10:42:23......reading the ihc_sample data
+time:2018-07-19 10:42:23......finished reading ihc_sample data
+time:2018-07-19 10:42:23......transform is in processing 
+time:2018-07-19 10:42:23......Table Care Site is in processing
+time:2018-07-19 10:42:23......Table Care Site is done
+time:2018-07-19 10:42:23......Table Person is in processing
+time:2018-07-19 10:42:24......Table Person is done
+time:2018-07-19 10:42:24......Table Visit Occurrence is in processing
+time:2018-07-19 10:42:25......Table Visit Occurrence is done
+time:2018-07-19 10:42:25......Table Condition Occurrence is in processing
+time:2018-07-19 10:42:25......Table Condition Occurrence is done
+time:2018-07-19 10:42:25......Table Observation is in processing
+time:2018-07-19 10:42:26......Table Observation is done
+time:2018-07-19 10:42:26......Table Death is in processing
+time:2018-07-19 10:42:26......Table Death is done
+time:2018-07-19 10:42:26......Table Sequencing is  in processing
+time:2018-07-19 10:42:28......Table Sequenceing is done
+time:2018-07-19 10:42:28......Table Variant Occurrence is in processing
+time:2018-07-19 10:42:32......Table Variant Occurrence is done
+time:2018-07-19 10:42:32......Table procedure Occurrence is in processing
+time:2018-07-19 10:42:32......Table Procedure Occurrence is done 
+time:2018-07-19 10:42:32......Table Drug Exposure is in processing
+time:2018-07-19 10:42:33......Table Drug Exposure is done
+time:2018-07-19 10:42:33......Table Measurement is in processing
+time:2018-07-19 10:42:33......Table Mesurement is done
+time:2018-07-19 10:42:33......transform is completed
+time:2018-07-19 10:42:33......the processing finish in 10.401855146666668 seconds
+time:2018-07-19 10:43:57......reading the ihc_sample data
+time:2018-07-19 10:43:57......finished reading ihc_sample data
+time:2018-07-19 10:43:57......transform is in processing 
+time:2018-07-19 10:43:57......Table Care Site is in processing
+time:2018-07-19 10:43:57......Table Care Site is done
+time:2018-07-19 10:43:57......Table Person is in processing
+time:2018-07-19 10:43:57......Table Person is done
+time:2018-07-19 10:43:57......Table Visit Occurrence is in processing
+time:2018-07-19 10:43:57......Table Visit Occurrence is done
+time:2018-07-19 10:43:57......Table Condition Occurrence is in processing
+time:2018-07-19 10:43:58......Table Condition Occurrence is done
+time:2018-07-19 10:43:58......Table Observation is in processing
+time:2018-07-19 10:43:58......Table Observation is done
+time:2018-07-19 10:43:58......Table Death is in processing
+time:2018-07-19 10:43:58......Table Death is done
+time:2018-07-19 10:43:58......Table Sequencing is  in processing
+time:2018-07-19 10:43:58......Table Sequenceing is done
+time:2018-07-19 10:43:58......Table Variant Occurrence is in processing
+time:2018-07-19 10:44:00......Table Variant Occurrence is done
+time:2018-07-19 10:44:00......Table procedure Occurrence is in processing
+time:2018-07-19 10:44:00......Table Procedure Occurrence is done 
+time:2018-07-19 10:44:00......Table Drug Exposure is in processing
+time:2018-07-19 10:44:00......Table Drug Exposure is done
+time:2018-07-19 10:44:00......Table Measurement is in processing
+time:2018-07-19 10:44:01......Table Mesurement is done
+time:2018-07-19 10:44:01......transform is completed
+time:2018-07-19 10:44:01......the processing finish in 3.7476919466666665 seconds
+time:2018-07-20 09:55:21......reading the ihc_sample data
+time:2018-07-20 09:55:21......finished reading ihc_sample data
+time:2018-07-20 09:55:21......transform is in processing 
+time:2018-07-20 09:55:21......Table Care Site is in processing
+time:2018-07-20 09:55:21......Table Care Site is done
+time:2018-07-20 09:55:21......Table Person is in processing
+time:2018-07-20 09:55:22......Table Person is done
+time:2018-07-20 09:55:22......Table Visit Occurrence is in processing
+time:2018-07-20 09:55:33......Table Visit Occurrence is done
+time:2018-07-20 09:55:33......Table Condition Occurrence is in processing
+time:2018-07-20 09:55:34......Table Condition Occurrence is done
+time:2018-07-20 09:55:34......Table Observation is in processing
+time:2018-07-20 09:55:34......Table Observation is done
+time:2018-07-20 09:55:34......Table Death is in processing
+time:2018-07-20 09:55:35......Table Death is done
+time:2018-07-20 09:55:35......Table Sequencing is  in processing
+time:2018-07-20 09:55:35......Table Sequenceing is done
+time:2018-07-20 09:55:35......Table Variant Occurrence is in processing
+time:2018-07-20 09:56:42......reading the ihc_sample data
+time:2018-07-20 09:56:42......finished reading ihc_sample data
+time:2018-07-20 09:56:42......transform is in processing 
+time:2018-07-20 09:56:42......Table Care Site is in processing
+time:2018-07-20 09:56:43......Table Care Site is done
+time:2018-07-20 09:56:43......Table Person is in processing
+time:2018-07-20 09:56:43......Table Person is done
+time:2018-07-20 09:56:43......Table Visit Occurrence is in processing
+time:2018-07-20 09:56:44......Table Visit Occurrence is done
+time:2018-07-20 09:56:44......Table Condition Occurrence is in processing
+time:2018-07-20 09:56:44......Table Condition Occurrence is done
+time:2018-07-20 09:56:44......Table Observation is in processing
+time:2018-07-20 09:56:44......Table Observation is done
+time:2018-07-20 09:56:44......Table Death is in processing
+time:2018-07-20 09:56:45......Table Death is done
+time:2018-07-20 09:56:45......Table Sequencing is  in processing
+time:2018-07-20 09:56:45......Table Sequenceing is done
+time:2018-07-20 09:56:45......Table Variant Occurrence is in processing
+time:2018-07-20 09:56:46......Table Variant Occurrence is done
+time:2018-07-20 09:56:46......Table procedure Occurrence is in processing
+time:2018-07-20 09:56:47......Table Procedure Occurrence is done 
+time:2018-07-20 09:56:47......Table Drug Exposure is in processing
+time:2018-07-20 09:56:47......Table Drug Exposure is done
+time:2018-07-20 09:56:47......Table Measurement is in processing
+time:2018-07-20 09:56:48......Table Mesurement is done
+time:2018-07-20 09:56:48......transform is completed
+time:2018-07-20 09:56:48......the processing finish in 6.04197711960262 seconds
+time:2018-07-20 09:58:04......reading the ihc_sample data
+time:2018-07-20 09:58:04......finished reading ihc_sample data
+time:2018-07-20 09:58:04......transform is in processing 
+time:2018-07-20 09:58:04......Table Care Site is in processing
+time:2018-07-20 09:58:04......Table Care Site is done
+time:2018-07-20 09:58:04......Table Person is in processing
+time:2018-07-20 09:58:04......Table Person is done
+time:2018-07-20 09:58:04......Table Visit Occurrence is in processing
+time:2018-07-20 09:58:05......Table Visit Occurrence is done
+time:2018-07-20 09:58:05......Table Condition Occurrence is in processing
+time:2018-07-20 09:58:05......Table Condition Occurrence is done
+time:2018-07-20 09:58:05......Table Observation is in processing
+time:2018-07-20 09:58:06......Table Observation is done
+time:2018-07-20 09:58:06......Table Death is in processing
+time:2018-07-20 09:58:06......Table Death is done
+time:2018-07-20 09:58:06......Table Sequencing is  in processing
+time:2018-07-20 09:58:06......Table Sequenceing is done
+time:2018-07-20 09:58:06......Table Variant Occurrence is in processing
+time:2018-07-20 09:58:06......Table Variant Occurrence is done
+time:2018-07-20 09:58:06......Table procedure Occurrence is in processing
+time:2018-07-20 09:58:07......Table Procedure Occurrence is done 
+time:2018-07-20 09:58:07......Table Drug Exposure is in processing
+time:2018-07-20 09:58:07......Table Drug Exposure is done
+time:2018-07-20 09:58:07......Table Measurement is in processing
+time:2018-07-20 09:58:08......Table Mesurement is done
+time:2018-07-20 09:58:08......transform is completed
+time:2018-07-20 09:58:08......the processing finish in 3.7408297717378924 seconds
+time:2018-07-20 17:11:09......reading the ihc_sample data
+time:2018-07-20 17:11:09......finished reading ihc_sample data
+time:2018-07-20 17:11:09......transform is in processing 
+time:2018-07-20 17:11:09......Table Care Site is in processing
+time:2018-07-20 17:11:10......Table Care Site is done
+time:2018-07-20 17:11:10......Table Person is in processing
+time:2018-07-20 17:11:10......Table Person is done
+time:2018-07-20 17:11:10......Table Visit Occurrence is in processing
+time:2018-07-20 17:11:11......Table Visit Occurrence is done
+time:2018-07-20 17:11:11......Table Condition Occurrence is in processing
+time:2018-07-20 17:11:12......Table Condition Occurrence is done
+time:2018-07-20 17:11:12......Table Observation is in processing
+time:2018-07-20 17:11:12......Table Observation is done
+time:2018-07-20 17:11:12......Table Death is in processing
+time:2018-07-20 17:11:13......Table Death is done
+time:2018-07-20 17:11:13......Table Sequencing is  in processing
+time:2018-07-20 17:11:14......Table Sequenceing is done
+time:2018-07-20 17:11:14......Table Variant Occurrence is in processing
+time:2018-07-20 17:11:15......Table Variant Occurrence is done
+time:2018-07-20 17:11:15......Table procedure Occurrence is in processing
+time:2018-07-20 17:11:15......Table Procedure Occurrence is done 
+time:2018-07-20 17:11:15......Table Drug Exposure is in processing
+time:2018-07-20 17:11:16......Table Drug Exposure is done
+time:2018-07-20 17:11:16......Table Measurement is in processing
+time:2018-07-20 17:11:17......Table Mesurement is done
+time:2018-07-20 17:11:17......transform is completed
+time:2018-07-20 17:11:17......the processing finish in 7.706799735296339 seconds

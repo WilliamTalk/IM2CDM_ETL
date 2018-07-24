@@ -1,14 +1,30 @@
-
 import pandas as pd
-from Constants import  PersonDict,ProcedureOccurrenceDict
-from Constants import  DeathDict,ObservationDict,ConditionOccurrenceDict
-from  Constants import  DrugExposureDict
+from Constants import  PersonDict,ProcedureOccurrenceDict,DeathDict,ObservationDict,ConditionOccurrenceDict,DrugExposureDict,VariantOccurrenceDict
 import os
 from log_status import  log_status
 import traceback
-import  datetime
+import time,datetime
+from Table_last_ids import  Table_last_ids
+from VCF2GCDM import VCF2GCDM
 
-log_s=log_status("log.txt")
+log_s=log_status("data/log.txt")
+tableids=Table_last_ids('data/ids.txt')
+tableids.load()
+
+def getDateFormat(datestr):
+    mydate=""
+    if str(datestr)!="nan":
+        mydatetime = datetime.datetime.strptime(datestr, "%d-%b-%y")
+        if mydatetime>datetime.datetime.now():
+            mydatetime=lastCentury(mydatetime)
+        mydate=str(mydatetime).replace("00:00:00", "")
+    return mydate
+
+def lastCentury(mydatetime):
+    lst=str(mydatetime).split("-")
+    return str(int(lst[0])-100)+"-"+lst[1]+"-"+lst[2]
+
+
 class MappingAll:
 
     """
@@ -26,9 +42,9 @@ class MappingAll:
         #to save sequencing dictionary
         self.DictSequencing={}
         self.DictCareSite={}
-        self.visit_ocrrenece_id_dx_start=0
-        self.visit_ocrrenece_id_treatment_start = 0
-        self.visit_ocrrenece_id_reccurence_start = 0
+        self.visit_ocrrenece_id_dx_start=tableids.last_visitoccurrence_id
+        self.visit_ocrrenece_id_treatment_start = tableids.last_visitoccurrence_id
+        self.visit_ocrrenece_id_reccurence_start = tableids.last_visitoccurrence_id
 
 
     def CreateCareSite(self):
@@ -48,13 +64,16 @@ class MappingAll:
         #reset the idnex of the dataframe
         lines=lines.reset_index()
         for i in range(len(lines)):
-            table["care_site_id"].append(i+1)
+            self.DictCareSite[lines.loc[i, "FCILTY_ID"]] = tableids.last_caresite_id
+            table["care_site_id"].append(tableids.last_caresite_id)
+            tableids.last_caresite_id = tableids.last_caresite_id + 1
             table["care_site_name"].append("ihc_"+str(lines.loc[i, "FCILTY_ID"]))
-            self.DictCareSite[lines.loc[i, "FCILTY_ID"]]=i+1
+
             table["location_id"].append("")
             table["care_site_source_value"].append(lines.loc[i, "FCILTY_ID"])
             table["place_of_service_concept_id"].append("")
             table["place_of_service_source_value"].append("")
+
 
         # define the columns
         columns = [
@@ -68,10 +87,10 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/CareSite.csv", sep=",", encoding="utf-8", index=False, columns=columns)
-        log_s.logsav("Table Care Site is finished and saved")
+        log_s.logsav("Table Care Site is done")
 
     def CreatePerson(self):
-
+        log_s.logsav("Table Person is in processing")
         #create a dictionanry for the table, every element in the dictionary is a list for the column
         table={
             "organization_id":[],
@@ -101,17 +120,19 @@ class MappingAll:
         lines=lines.reset_index()
         for i in range(len(lines)):
             try:
+                self.Dict[lines.loc[i, "EMPI"]] = tableids.last_person_id
                 table["organization_id"].append("3")
-                table["person_id"].append(i+1)
+                table["person_id"].append(tableids.last_person_id)
+                tableids.last_person_id = tableids.last_person_id + 1
                 table["person_source_value"].append(lines.loc[i, "EMPI"])
-                self.Dict[lines.loc[i, "EMPI"]]=i+1
+
                 #split birthday to year,month and day
-                birthday=str(lines.loc[i, "BIRTH_DT"]).split('/')
-                birthtime=str(lines.loc[i, "BIRTH_DT"])+" 00:00:00"
+                birthdate=getDateFormat(lines.loc[i, "BIRTH_DT"])
+                birthday=birthdate.split("-")
                 table["year_of_birth"].append(birthday[0])
                 table["month_of_birth"].append(birthday[1])
                 table["day_of_birth"].append(birthday[2])
-                table["birth_datetime"].append(birthtime)
+                table["birth_datetime"].append(birthdate+" 00:00:00")
                 table["location_id"].append("")
                 table["provider_id"].append("")
                 table["gender_source_value"].append(lines.loc[i, "SEX_CD"])
@@ -126,6 +147,7 @@ class MappingAll:
                 table["ethnicity_source_concept_id"].append("")
             except Exception as e:
                 log_s.logsav(traceback.format_exc())
+
 
         #define the columns
         columns=[
@@ -151,8 +173,10 @@ class MappingAll:
         #define the dataFrame using the new table data and save them in its path
         df=pd.DataFrame(table)
         df.to_csv('data/Person.csv',sep=",",encoding="utf-8",index=False,columns=columns)
+        log_s.logsav("Table Person is done")
 
     def CreateVisitOccurrence(self):
+        log_s.logsav("Table Visit Occurrence is in processing")
         table = {
             "visit_occurrence_id": [],
             "person_id": [],
@@ -173,28 +197,26 @@ class MappingAll:
             "preceding_visit_occurrence_id":[]
 
         }
-        count = 0
+
         # from DX_CODE_CD and DIAGNOSIS_DT and remove the duplicate records
         lines = self.Intermountain[["EMPI","FCILTY_ID", "DX_CODE_CD", "DIAGNOSIS_DT"]]
         lines=lines.drop_duplicates(["EMPI","FCILTY_ID", "DX_CODE_CD", "DIAGNOSIS_DT"])
         lines=lines.reset_index()
         for i in range(len(lines)):
-            table["visit_occurrence_id"].append(count)
-            count = count + 1
+            table["visit_occurrence_id"].append(tableids.last_visitoccurrence_id)
+            tableids.last_visitoccurrence_id = tableids.last_visitoccurrence_id + 1
             table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
             table["visit_concept_id"].append("9202")
-            table["visit_start_date"].append(lines.loc[i, "DIAGNOSIS_DT"])
-            if not pd.isnull(lines.loc[i, "DIAGNOSIS_DT"]):
-                table["visit_start_datetime"].append(str(lines.loc[i, "DIAGNOSIS_DT"]) + " 00:00:00")
-            else:
-                table["visit_start_datetime"].append("")
+            visit_start_date=getDateFormat(lines.loc[i, "DIAGNOSIS_DT"])
+            table["visit_start_date"].append(visit_start_date)
+            table["visit_start_datetime"].append("")
             table["visit_end_date"].append("")
             table["visit_end_datetime"].append("")
             table["visit_type_concept_id"].append("44818518")
             # table["visit_type_concept_id"].append("")
             table["provider_id"].append("")
             table["care_site_id"].append(self.DictCareSite[lines.loc[i, "FCILTY_ID"]])
-            table["visit_source_value"].append("dx code")
+            table["visit_source_value"].append("")
             table["visit_source_concept_id"].append("")
             table["admitting_source_concept_id"].append("")
             table["admitting_source_value"].append("")
@@ -203,28 +225,24 @@ class MappingAll:
             table["preceding_visit_occurrence_id"].append("")
 
         # from Treatment
-        self.visit_ocrrenece_id_dx_start = count
+        self.visit_ocrrenece_id_treatment_start = tableids.last_visitoccurrence_id
         lines = self.Intermountain[["EMPI", "FCILTY_ID", "TX_TYPE_DSC", "START_DT","END_DT"]]
         for i in range(len(lines)):
-            table["visit_occurrence_id"].append(count)
-            count=count+1
+            table["visit_occurrence_id"].append(tableids.last_visitoccurrence_id)
+            tableids.last_visitoccurrence_id=tableids.last_visitoccurrence_id+1
             table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
             table["visit_concept_id"].append("9202")
-            table["visit_start_date"].append(lines.loc[i,"START_DT"])
-            if not pd.isnull(lines.loc[i,"START_DT"]):
-               table["visit_start_datetime"].append(str(lines.loc[i,"START_DT"])+" 00:00:00")
-            else:
-                table["visit_start_datetime"].append("")
-            table["visit_end_date"].append(lines.loc[i, "END_DT"])
-            if not pd.isnull(lines.loc[i, "END_DT"]):
-                table["visit_end_datetime"].append(str(lines.loc[i, "END_DT"])+" 00:00:00")
-            else:
-                table["visit_end_datetime"].append("")
+            visit_start_date=getDateFormat(lines.loc[i,"START_DT"])
+            table["visit_start_date"].append(visit_start_date)
+            table["visit_start_datetime"].append("")
+            visit_end_date = getDateFormat(lines.loc[i, "END_DT"])
+            table["visit_end_date"].append(visit_end_date)
+            table["visit_end_datetime"].append("")
             table["visit_type_concept_id"].append("44818518")
             #table["visit_type_concept_id"].append("")
             table["provider_id"].append("")
             table["care_site_id"].append(self.DictCareSite[lines.loc[i, "FCILTY_ID"]])
-            table["visit_source_value"].append("treatments")
+            table["visit_source_value"].append("")
             table["visit_source_concept_id"].append("")
             table["admitting_source_concept_id"].append("")
             table["admitting_source_value"].append("")
@@ -233,27 +251,25 @@ class MappingAll:
             table["preceding_visit_occurrence_id"].append("")
 
         # from RECURRENCE_DT and RECURRENCE_SITE
-        self.visit_ocrrenece_id_reccurence_start = count
+        self.visit_ocrrenece_id_reccurence_start = tableids.last_visitoccurrence_id
         lines = self.Intermountain[["EMPI", "FCILTY_ID", "RECURRENCE_DT", "RECURRENCE_SITE"]]
         lines = lines.drop_duplicates(["EMPI", "FCILTY_ID", "RECURRENCE_DT", "RECURRENCE_SITE"]).dropna(subset=["RECURRENCE_DT"])
         lines = lines.reset_index()
         for i in range(len(lines)):
-            table["visit_occurrence_id"].append(count)
-            count = count + 1
+            table["visit_occurrence_id"].append(tableids.last_visitoccurrence_id)
+            tableids.last_visitoccurrence_id = tableids.last_visitoccurrence_id + 1
             table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
             table["visit_concept_id"].append("9202")
-            table["visit_start_date"].append(lines.loc[i, "RECURRENCE_DT"])
-            if not pd.isnull(lines.loc[i, "RECURRENCE_DT"]):
-                table["visit_start_datetime"].append(str(lines.loc[i, "RECURRENCE_DT"]) + " 00:00:00")
-            else:
-                table["visit_start_datetime"].append("")
+            visit_start_date=getDateFormat(lines.loc[i, "RECURRENCE_DT"])
+            table["visit_start_date"].append(visit_start_date)
+            table["visit_start_datetime"].append("")
             table["visit_end_date"].append("")
             table["visit_end_datetime"].append("")
             table["visit_type_concept_id"].append("44818518")
             # table["visit_type_concept_id"].append("")
             table["provider_id"].append("")
             table["care_site_id"].append(self.DictCareSite[lines.loc[i, "FCILTY_ID"]])
-            table["visit_source_value"].append("recurrence")
+            table["visit_source_value"].append("")
             table["visit_source_concept_id"].append("")
             table["admitting_source_concept_id"].append("")
             table["admitting_source_value"].append("")
@@ -287,8 +303,10 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/VisitOccurrence.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Visit Occurrence is done")
 
     def CreateConditionOccurrence(self):
+        log_s.logsav("Table Condition Occurrence is in processing")
         table = {
             "person_id":[],
             "condition_occurrence_id":[],
@@ -309,7 +327,7 @@ class MappingAll:
 
         }
 
-        count = 0
+
         # from DX_CODE_CD and DIAGNOSIS_DT
         lines = self.Intermountain[["EMPI","DX_CODE_CD", "DIAGNOSIS_DT"]]
         lines = lines.drop_duplicates(["EMPI","DX_CODE_CD", "DIAGNOSIS_DT"])
@@ -317,9 +335,10 @@ class MappingAll:
         for i in range(len(lines)):
             try:
                 table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
-                table["condition_occurrence_id"].append(count)
-                count = count + 1
-                table["condition_start_date"].append("")
+                table["condition_occurrence_id"].append(tableids.last_conditionoccurrence_id)
+                tableids.last_conditionoccurrence_id = tableids.last_conditionoccurrence_id + 1
+                condition_start_date=getDateFormat(lines.loc[i,"DIAGNOSIS_DT"])
+                table["condition_start_date"].append(condition_start_date)
                 table["condition_start_datetime"].append("")
                 table["condition_end_date"].append("")
                 table["condition_end_datetime"].append("")
@@ -339,15 +358,16 @@ class MappingAll:
 
         #from RECURRENCE_DT and RECURRENCE_SITE
         lines = self.Intermountain[["EMPI","RECURRENCE_DT", "RECURRENCE_SITE"]]
-        lines = lines.drop_duplicates(["EMPI", "FCILTY_ID", "RECURRENCE_DT", "RECURRENCE_SITE"]).dropna(subset=["RECURRENCE_DT"])
+        lines = lines.drop_duplicates(["EMPI", "RECURRENCE_DT", "RECURRENCE_SITE"]).dropna(subset=["RECURRENCE_DT"])
         lines = lines.reset_index()
 
         for i in range(len(lines)):
             try:
                 table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
-                table["condition_occurrence_id"].append(count)
-                count=count+1
-                table["condition_start_date"].append("")
+                table["condition_occurrence_id"].append(tableids.last_conditionoccurrence_id)
+                tableids.last_conditionoccurrence_id=tableids.last_conditionoccurrence_id+1
+                condition_start_date=getDateFormat(lines.loc[i,"RECURRENCE_DT"])
+                table["condition_start_date"].append(condition_start_date)
                 table["condition_start_datetime"].append("")
                 table["condition_end_date"].append("")
                 table["condition_end_datetime"].append("")
@@ -372,6 +392,9 @@ class MappingAll:
             "person_id",
             "condition_occurrence_id",
             "condition_start_date",
+            "condition_start_datetime",
+            "condition_end_date",
+            "condition_end_datetime",
             "condition_concept_id",
             "condition_source_value",
             "condition_type_concept_id",
@@ -388,8 +411,10 @@ class MappingAll:
         df = pd.DataFrame(table)
         df=df.dropna(subset=["condition_start_date"])
         df.to_csv("data/ConditionOccurrence.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Condition Occurrence is done")
 
     def CreateObservation(self):
+        log_s.logsav("Table Observation is in processing")
         table = {
 
             "observation_id": [],
@@ -419,11 +444,9 @@ class MappingAll:
             try:
                 table["observation_id"].append(i)
                 table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
-                table["observation_date"].append(lines.loc[i,"START_DT"])
-                if not pd.isnull(lines.loc[i,"START_DT"]):
-                    table["observation_datetime"].append(lines.loc[i,"START_DT"]+" 00:00:00")
-                else:
-                    table["observation_datetime"].append("")
+                observation_date=getDateFormat(lines.loc[i,"START_DT"])
+                table["observation_date"].append(observation_date)
+                table["observation_datetime"].append("")
                 table["observation_type_concept_id"].append("4176642")
                 if not pd.isnull(lines.loc[i, "TX_REASON_DSC"]):
                     table["observation_concept_id"].append(ObservationDict.TREAMMENTlINE[lines.loc[i, "TX_REASON_DSC"]])
@@ -471,8 +494,10 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/Observation.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Observation is done")
 
     def CreateDeath(self):
+        log_s.logsav("Table Death is in processing")
         table = {
             "person_id": [],
             "death_date": [],
@@ -491,8 +516,9 @@ class MappingAll:
         for i in range(len(lines)):
             try:
                 table["person_id"].append(self.Dict[lines.loc[i,"EMPI"]])
-                table["death_date"].append(lines.loc[i, "DEATH_DT"])
-                table["death_datetime"].append(lines.loc[i, "DEATH_DT"]+" 00:00:00")
+                death_date=getDateFormat(lines.loc[i, "DEATH_DT"])
+                table["death_date"].append(death_date)
+                table["death_datetime"].append("")
                 table["cause_source_value"].append(lines.loc[i, "CAUSE_OF_DEATH_DSC"])
                 if not pd.isnull(lines.loc[i,"CAUSE_OF_DEATH_DSC"]):
                      table["cause_concept_id"].append(DeathDict.DEATHTYPE[lines.loc[i,"CAUSE_OF_DEATH_DSC"]])
@@ -516,8 +542,10 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/Death.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Death is done")
 
     def CreateSequencing(self):
+        log_s.logsav("Table Sequencing is  in processing")
         table = {
             "sequencing_id": [],
             "person_id": [],
@@ -570,7 +598,8 @@ class MappingAll:
             self.DictSequencing[key]=i
             table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
             table["sequencing_id"].append(i)
-            table["sequencing_date"].append(lines.loc[i,"TEST_DT"])
+            sequencing_date=getDateFormat(lines.loc[i,"TEST_DT"])
+            table["sequencing_date"].append(sequencing_date)
             table["order_date"].append("")
             table["order_code"].append("")
             table["procedure_id"].append("")
@@ -656,8 +685,10 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/Sequencing.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Sequenceing is done")
 
     def CreateVariantOccurrence(self):
+        log_s.logsav("Table Variant Occurrence is in processing")
 
         table = {
             "variant_occurrence_id": [],
@@ -700,8 +731,8 @@ class MappingAll:
             table["chrid_2"].append("")
             table["start_pos"].append("")
             table["end_pos"].append("")
-            table["gene1_symbol_concept_id"].append("")
-            table["gene1_symbol_source_value"].append("")
+            table["gene1_symbol_concept_id"].append(VariantOccurrenceDict.TYPE[lines.loc[i, "TEST_TYPE_DSC"]])
+            table["gene1_symbol_source_value"].append(lines.loc[i, "TEST_TYPE_DSC"])
             table["gene2_symbol_concept_id"].append("")
             table["gene2_symbol_source_value"].append("")
             table["quality_score"].append("")
@@ -716,6 +747,7 @@ class MappingAll:
 
             # define the columns
         columns = [
+
 
             "variant_occurrence_id",
             "person_id",
@@ -744,8 +776,13 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/VariantOccurrence.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        v = VCF2GCDM()
+        v.process()
+
+        log_s.logsav("Table Variant Occurrence is done")
 
     def CreateProcedureOccurrence(self):
+        log_s.logsav("Table procedure Occurrence is in processing")
 
         table = {
             "procedure_occurrence_id": [],
@@ -772,11 +809,9 @@ class MappingAll:
                 table["procedure_occurrence_id"].append(i)
                 table["procedure_concept_id"].append(ProcedureOccurrenceDict.TREAMMENTTYPE[lines.loc[i, "TX_TYPE_DSC"]])
                 table["person_id"].append(self.Dict[lines.loc[i, "EMPI"]])
-                table["procedure_date"].append(lines.loc[i, "START_DT"])
-                if not pd.isnull(lines.loc[i,"START_DT"]):
-                    table["procedure_datetime"].append(str(lines.loc[i,"START_DT"])+" 00:00:00")
-                else:
-                    table["procedure_datetime"].append("")
+                procedure_date=getDateFormat(lines.loc[i, "START_DT"])
+                table["procedure_date"].append(procedure_date)
+                table["procedure_datetime"].append("")
 
                 table["procedure_type_concept_id"].append("4322976")
                 table["modifier_concept_id"].append("")
@@ -811,8 +846,10 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/ProcedureOccurrence.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Procedure Occurrence is done ")
 
     def CreateDrugExposure(self):
+        log_s.logsav("Table Drug Exposure is in processing")
         table = {
             "drug_exposure_id": [],
             "person_id": [],
@@ -852,18 +889,12 @@ class MappingAll:
                     table["drug_concept_id"].append(DrugExposureDict.Drug[lines.loc[i,"DOSE_DELIVERY_DSC"]])
                 else:
                     table["drug_concept_id"].append(lines.loc[i, "AGENT_DSC"])
-
-                table["drug_exposure_start_date"].append(lines.loc[i, "START_DT"])
-                if not pd.isnull(lines.loc[i, "START_DT"]):
-                   table["drug_exposure_start_time"].append(lines.loc[i, "START_DT"]+" 00:00:00")
-                else:
-                    table["drug_exposure_start_time"].append("")
-
-                table["drug_exposure_end_date"].append(lines.loc[i, "END_DT"])
-                if not pd.isnull(lines.loc[i, "END_DT"]):
-                  table["drug_exposure_end_time"].append(lines.loc[i, "END_DT"]+" 00:00:00")
-                else:
-                    table["drug_exposure_end_time"].append("")
+                drug_exposure_start_date=getDateFormat(lines.loc[i, "START_DT"])
+                table["drug_exposure_start_date"].append(drug_exposure_start_date)
+                table["drug_exposure_start_time"].append("")
+                drug_exposure_end_date=getDateFormat(lines.loc[i, "END_DT"])
+                table["drug_exposure_end_date"].append(drug_exposure_end_date)
+                table["drug_exposure_end_time"].append("")
                 table["verbatim_end_date"].append("")
                 table["drug_type_concept_id"].append("")
                 table["stop_reason"].append("")
@@ -918,8 +949,10 @@ class MappingAll:
         #remove the records where drug_concept_id is null
         df=df.dropna(subset=['drug_concept_id'])
         df.to_csv("data/DrugExposure.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Drug Exposure is done")
 
     def CreateMeasurement(self):
+        log_s.logsav("Table Measurement is in processing")
         table = {
                 "measurement_id": [],
                 "person_id": [],
@@ -1137,11 +1170,9 @@ class MappingAll:
             table["measurement_id"].append(count)
             count = count + 1
             table["measurement_concept_id"].append("4168352")
-            table["measurement_date"].append(lines.loc[i,"PROGRESSION_DT"])
-            if not pd.isnull(lines.loc[i,"PROGRESSION_DT"]):
-               table["measurement_datetime"].append(str(lines.loc[i,"PROGRESSION_DT"])+" 00:00:00")
-            else:
-               table["measurement_datetime"].append("")
+            measurement_date=getDateFormat(lines.loc[i,"PROGRESSION_DT"])
+            table["measurement_date"].append(measurement_date)
+            table["measurement_datetime"].append("")
             table["measurement_time"].append(""),
             table["measurement_type_concept_id"].append("4322976")
             table["operator_concept_id"].append("")
@@ -1151,7 +1182,7 @@ class MappingAll:
             table["range_low"].append("")
             table["range_high"].append("")
             table["provider_id"].append("")
-            table["visit_occurrence_id"].append(self.visit_ocrrenece_id_treatment_start+1)
+            table["visit_occurrence_id"].append(self.visit_ocrrenece_id_treatment_start+i)
             table["visit_detail_id"].append("")
             table["measurement_source_value"].append("")
             table["measurement_source_concept_id"].append("4168352")
@@ -1184,29 +1215,39 @@ class MappingAll:
         # define the dataFrame using the new table data and save them in its path
         df = pd.DataFrame(table)
         df.to_csv("data/Measurement.csv", sep=",", encoding="utf-8", index=False, columns=columns)
+        log_s.logsav("Table Mesurement is done")
 
     def workflow(self):
-        funlst=[self.CreateCareSite(),self.CreatePerson(),self.CreateVisitOccurrence(),self.CreateConditionOccurrence(),self.CreateObservation(),self.CreateDeath(),
-                self.CreateSequencing(),self.CreateVariantOccurrence(),
-                self.CreateProcedureOccurrence(),self.CreateDrugExposure(),self.CreateMeasurement()]
+
         log_s.logsav("transform is in processing ")
+        self.CreateCareSite()
+        self.CreatePerson()
+        self.CreateVisitOccurrence()
+        self.CreateConditionOccurrence()
+        self.CreateObservation()
+        self.CreateDeath()
+        self.CreateSequencing()
+        self.CreateVariantOccurrence()
+        self.CreateProcedureOccurrence()
+        self.CreateDrugExposure()
+        self.CreateMeasurement()
 
-        for func in funlst:
-
-            func
-
+        #tableids.save()
         log_s.logsav("transform is completed")
 
 if __name__=="__main__":
-    starttime=datetime.datetime.now()
+    start = time.clock()
     m=MappingAll("data/ihc_sample.csv")
+
     m.workflow()
-    endtime=datetime.datetime.now()
-    costtime=(endtime-starttime).microseconds
-    print(costtime)
-    #m.CreatePerson()
-    # m.CreateSequencing()
-    # m.CreateVariantOccurrence()
+    # v = VCF2GCDM()
+    # v.process()
+    end = time.clock()
+    cost=end-start
+    log_s.logsav('the processing finish in {0} seconds'.format(cost))
+
+
+
 
 
 
